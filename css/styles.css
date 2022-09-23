@@ -1,0 +1,418 @@
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+.top-section {
+height: 300px;
+background-color: #182747;
+margin: 0;
+padding-top: 80px;
+top:0;
+}
+.middle-section {
+  position: relative;
+  background-color: #899099;
+background-image: url("https://transparenttextures.com/patterns/brick-wall-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  margin: 0;
+  padding: 0;
+
+}
+.footer {
+  background-color: #182747;
+}
+.girl-container {
+  position: relative;
+  top: 25px;
+  left: 50px;
+}
+.button-container {
+  position: relative;
+  left: 230px;
+  bottom: 60px;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+}
+.cloud-container, .stand-container {
+  display: inline-block;
+}
+.cloud {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  height: 200px;
+}
+.throw {
+
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #8758FF;
+  color: #fff;
+}
+.throw:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.ball-container {
+position: absolute;
+top: 45px;
+left: 170px;
+}
+.stand-container {
+  position: relative;
+  left: 1340px;
+
+}
+.girl1, .girl2 {
+  height: 350px;
+}
+.girl2{
+  position: relative;
+  bottom: 350px;
+  right: 150px;
+}
+.ball {
+  height: 40px;
+}
+
+.stand {
+  height: 200px;
+}
+.spark {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+  height: 10px;
+  animation: getSpark 2s linear;
+}
+.spark1 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  height: 20px;
+  animation: getSpark 5s linear;
+}
+.spark2 {
+  position: absolute;
+  bottom: 200px;
+  left: 400px;
+  height: 20px;
+  animation: getSpark 5s linear;
+}
+.spark3 {
+  height: 20px;
+  animation: getSpark 5s linear;
+}
+
+.aeroplane {
+  position: absolute;
+  height: 80px;
+  top: 10px;
+  right:200px;
+  animation: blinker2 3s linear infinite;
+  animation: blinker3 3s;
+}
+.questionMark {
+  position: absolute;
+  right: 150px;
+  font-size: 30px;
+  animation: blinker1 3s linear infinite;
+}
+
+
+@keyframes spinningBall {
+  0%{
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes runningBall1 {
+0% {
+  transform: translate(0, 0);
+
+}
+75% {
+  transform: translate(1200px, -300px);
+}
+
+100% {
+  transform: translate(1200px, -10px);
+}
+}
+@keyframes runningBall2 {
+0% {
+  transform: translate(0, 0);
+}
+
+80%{
+  transform: translate(1200px, -300px);
+}
+100% {
+  transform: translate(0, 0);
+}
+}
+
+@keyframes runningBall3 {
+0% {
+  transform: translate(0, 0);
+
+}
+75% {
+  transform: translate(800px, -350px);
+}
+
+100% {
+  transform: translate(1300px, -10px);
+}
+}
+
+
+@keyframes runningBall4 {
+0% {
+  transform: translate(0, 0);
+}
+
+100% {
+  transform: translate(1500px, -400px);
+}
+}
+@keyframes runningBall5 {
+0% {
+  transform: translate(0, 0);
+
+}
+
+100% {
+  transform: translate(1500px, -200px);
+}
+}
+
+
+@keyframes getSpark {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(20);
+  }
+}
+@keyframes blinker1 {
+0% {
+  transform: scale(1)
+
+}
+10% {
+  transform: scale(2)
+}
+20% {
+  transform: scale(1)
+}
+30% {
+  transform: scale(2)
+}
+40% {
+  transform: scale(1)
+}
+50% {
+  transform: scale(2)
+}
+60% {
+  transform: scale(1)
+
+}
+70% {
+  transform: scale(2)
+}
+80% {
+  transform: scale(1)
+}
+90% {
+  transform: scale(2)
+}
+100% {
+  transform: scale(1)
+}
+
+}
+@keyframes blinker2{
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blinker3{
+  0%{
+    transform: rotate(0);
+  }
+  20%{
+    transform: rotate(-10deg);
+  }
+  60%{
+    transform: rotate(-20deg);
+  }
+  70%{
+    transform: rotate(-40deg);
+  }
+  80%{
+    transform: rotate(-40deg);
+  }
+  90%{
+    transform: rotate(-40deg);
+  }
+  100%{
+  transform: rotate(-40deg);
+  }
+}
+
+/* for maximum width 600px and below */    /* for maximum width 600px and below */
+/* for maximum width 600px and below */    /* for maximum width 600px and below */
+
+
+@media (max-width: 600px) {
+  .girl1, .girl2 {
+    height: 200px;
+  }
+  .girl2{
+    position: relative;
+   bottom: 200px;
+    left: -100px;
+  }
+  .girl-container {
+   left: 0;
+   top: 50px;
+
+  }
+  .button-container {
+    left: 100px;
+  }
+  .cloud {
+    height: 150px;
+    left: 50px;
+  }
+  .ball {
+    height: 30px;
+  }
+  .ball-container {
+  position: relative;
+  top: -150px;
+  left: 65px;
+  }
+  .stand {
+    height: 100px;
+  }
+  .stand-container {
+    position: absolute;
+  left: 82%;
+    top: 180px;
+  }
+
+  @keyframes runningBall1 {
+  0% {
+    transform: translate(0, 0);
+
+  }
+  75% {
+    transform: translate(320px, -250px);
+  }
+
+  100% {
+    transform: translate(330px, -10px);
+  }
+  }
+
+  @keyframes runningBall2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  80%{
+    transform: translate(330px, -250px);
+  }
+ 100% {
+     transform: translate(0, 0);
+ }
+
+  }
+  @keyframes runningBall3 {
+  0% {
+    transform: translate(0, 0);
+
+  }
+  75% {
+    transform: translate(250px, -250px);
+  }
+
+  100% {
+    transform: translate(300px, -10px);
+  }
+  }
+
+
+  @keyframes runningBall4 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(500px, -400px);
+  }
+  }
+  @keyframes runningBall5 {
+  0% {
+    transform: translate(0, 0);
+
+  }
+
+  100% {
+    transform: translate(500px, -200px);
+  }
+  }
+  @keyframes getSpark {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(10);
+    }
+  }
+
+  .spark2 {
+    left: 50px;
+
+  }
+  .spark {
+    right: 50px;
+    top: 30px;
+  }
+  .aeroplane {
+    height: 50px;
+    right: 100px;
+    top: 0;
+  }
+  .questionMark {
+    font-size: 20px;
+    right: 100px;
+    top: -20px;
+  }
+}
