@@ -347,7 +347,7 @@ left: 170px;
   }
 
   80%{
-    transform: translate(260px, -220px);
+    transform: translate(280px, -240px);
   }
  100% {
      transform: translate(0, 0);
